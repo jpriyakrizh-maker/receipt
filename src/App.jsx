@@ -19,6 +19,9 @@ export default function App() {
     if (receiptType === "qr") {
       window.setTimeout(() => setReceiptType("barcode"), 1300);
     }
+    if (receiptType === "barcode") {
+  window.setTimeout(() => setReceiptType("photo"), 1300);
+}
   }
 
   return (
